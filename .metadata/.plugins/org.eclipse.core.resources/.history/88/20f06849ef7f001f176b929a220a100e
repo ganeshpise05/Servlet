@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+     <form action="home">
+        UserName :  <input type = "text" name = "un" placeholder = "Enter Name">
+        Password :  <input type = "text" name = "pass" placeholder = "Enter Password">
+                    <input type = "button" name = "submit">
+     </form>
+</body>
+</html>

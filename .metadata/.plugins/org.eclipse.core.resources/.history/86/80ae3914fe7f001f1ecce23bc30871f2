@@ -1,0 +1,39 @@
+package reqdispatcher;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/home")
+public class Home extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
+        String name = req.getParameter("un");
+        String pass = req.getParameter("pass");
+
+        // Set content type to HTML
+        resp.setContentType("text/html");
+
+        if (name != null && pass != null && name.equals("Ganesh") && pass.equals("2205")) {
+            // Forward to /login if credentials are valid
+            RequestDispatcher rd = req.getRequestDispatcher("/login");
+            rd.forward(req, resp);
+        } else {
+            // Respond with invalid credentials message
+            PrintWriter pw = resp.getWriter();    
+            pw.print("<h2> Invalid Credentials !! </h2>");
+            pw.print("<h2> Please enter valid Username & Password !  <br> <br>");
+           
+            // Include the Login.html file content
+            RequestDispatcher rd = req.getRequestDispatcher("/Login.html");
+            rd.include(req, resp);
+        }
+    }
+}

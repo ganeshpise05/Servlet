@@ -1,0 +1,14 @@
+
+Oct 01, 2024 19:30:40.13 NEW SESSION
+Oct 01, 2024 19:30:40.14 [14436:27784:1001/193040.122:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 19:30:43.88 Created TensorFlow Lite XNNPACK delegate for CPU.
+Oct 01, 2024 19:31:05.89 [14436:27784:1001/193105.890:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 19:31:08.00 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+Oct 01, 2024 19:31:52.53 [14436:27784:1001/193152.536:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 19:33:35.65 [14436:27784:1001/193335.650:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 19:36:47.40 [14436:27784:1001/193647.407:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 19:43:49.02 [14436:27784:1001/194349.019:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Oct 01, 2024 20:25:27.53 [14436:27784:1001/202527.531:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Oct 01, 2024 20:40:51.83 [14436:27784:1001/204051.831:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Oct 01, 2024 22:14:54.37 [14436:27784:1001/221454.370:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Oct 01, 2024 22:14:54.37 [14436:27784:1001/221454.371:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
